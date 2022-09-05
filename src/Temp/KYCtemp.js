@@ -197,22 +197,22 @@ const KYCtemp = () => {
                     })
                 await getDownloadURL(ref(storage, `${process.env.REACT_APP_FIREBASE_USER_PROFILE_DATABASE}${auth.currentUser.uid}`))
                     .catch((error) => {
-                        // switch (error.code) {
-                        //     case 'storage/object-not-found':
-                        //         console.log("File doesn't exist")
-                        //         break;
-                        //     case 'storage/unauthorized':
-                        //         console.log("User doesn't have permission to access the object")
-                        //         break;
-                        //     case 'storage/canceled':
-                        //         console.log("User canceled the upload")
-                        //         break;
-                        //     case 'storage/unknown':
-                        //         console.log("Unknown error occurred, inspect the server response")
-                        //         break;
-                        //     default:
-                        //         break;
-                        // }
+                        switch (error.code) {
+                            case 'storage/object-not-found':
+                                console.log("File doesn't exist")
+                                break;
+                            case 'storage/unauthorized':
+                                console.log("User doesn't have permission to access the object")
+                                break;
+                            case 'storage/canceled':
+                                console.log("User canceled the upload")
+                                break;
+                            case 'storage/unknown':
+                                console.log("Unknown error occurred, inspect the server response")
+                                break;
+                            default:
+                                break;
+                        }
                         if (error) {
                             if (doesUserExist) {
                                 setWarning('Error retreiving profile picture from the server. Please re-upload your profile picture.');

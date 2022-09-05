@@ -22,7 +22,11 @@ const CartItem = ({ cart }) => {
                 <div className='cart_i_dp'>
                     <img src={pp} alt='cart' />
                 </div>
-                <CustomCheckBox name={`checkout_store_${cart.id}`} handleSwitchFalse={() => console.log('off')} handleSwitchTrue={() => console.log('on')} />
+                <CustomCheckBox
+                    name={`checkout_store_${cart.id}`}
+                    handleSwitchFalse={() => console.log('off')}
+                    handleSwitchTrue={() => console.log('on')}
+                />
             </div>
             <div className='cart_item_2'>
                 <h1 className='cart_i_name'>{cart.name}</h1>
