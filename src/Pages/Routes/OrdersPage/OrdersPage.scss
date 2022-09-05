@@ -1,0 +1,181 @@
+.orderspage_main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    min-height: 85vh;
+
+    .orders_p_h {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+
+        .orders_p_h_a {
+            position: absolute;
+            left: 20px;
+            transition: all 150ms ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        h2 {
+            color: rgb(74, 74, 173);
+        }
+    }
+
+    .orders_p_f {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        align-items: center;
+        position: relative;
+
+        .orders_p_f_btn {
+            background-color: rgb(255, 255, 255);
+            margin: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0.6px 1px 1px rgba(0, 0, 0, 0.2);
+            transition: all 150ms ease-in-out;
+
+            &:hover {
+                background-color: rgb(202, 202, 202);
+            }
+
+            p {
+                font-size: 13px;
+                margin-left: 5px;
+                color: rgb(74, 74, 173);
+                font-weight: bold;
+            }
+        }
+
+        #orders_p_f_btn {
+            background-color: rgb(74, 74, 173);
+
+            p {
+                color: white;
+                font-weight: 400;
+            }
+
+            &:hover {
+                background-color: rgb(88, 88, 211);
+            }
+        }
+    }
+
+    .orders_p_g {
+        display: grid;
+        padding: 5px;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+        justify-items: center;
+
+        .orders_p_g_i {
+            background-color: rgba(74, 74, 173, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            margin-top: 4px;
+            width: 550px;
+            min-width: 550px;
+            max-width: 550px;
+            height: 100%;
+            align-items: center;
+            padding: 5px;
+            padding-left: 8px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    
+            .o_p_g_i_p {
+                font-size: 13px;
+                font-weight: bold;
+                padding: 5px;
+            }
+    
+            .o_p_g_i_btn {
+                outline: none;
+                border: none;
+                background-color: rgb(74, 74, 173);
+                margin: 2px 3px 5px 1px;
+                padding: 9px 1px;
+                border-radius: 5px;
+                color: white;
+                align-self: center;
+                transition: all 150ms ease-in-out;
+                min-width: 120px;
+                cursor: pointer;
+                align-self: flex-end;
+                margin-top: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                &:hover {
+                    transform: scale(1.03);
+                    background-color: rgb(88, 88, 211);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:720px) {
+
+    .orderspage_main {
+
+        .orders_p_h {
+
+            .orders_p_h_a {
+
+                &:hover {
+                    transform: scale(1);
+                }
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+
+        .orders_p_g {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            .orders_p_g_i {
+                width: 97%;
+                min-width: 97%;
+                max-width: 97%;
+                margin-top: 10px;
+    
+                .o_p_g_i_p {
+                    font-size: 12px;
+                    padding: 2px;
+                }
+    
+                .o_p_g_i_btn {
+                    width: 100px;
+                    min-width: 100px;
+                    max-width: 100px;
+                    height: 38px;
+                    min-height: 38px;
+                    max-height: 38px;
+    
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}

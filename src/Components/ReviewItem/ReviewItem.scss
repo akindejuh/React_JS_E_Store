@@ -1,0 +1,41 @@
+.reviewitem_main {
+    margin-bottom: 7px;
+    background-color: rgba(74, 74, 173, 0.15);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+
+    .ri_m_1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(74, 74, 173, 0.15);
+        border-radius: 50%;
+        width: 60px;
+        min-width: 60px;
+        max-width: 60px;
+        height: 60px;
+        min-height: 60px;
+        max-height: 60px;
+        margin-right: 10px;
+    }
+
+    .ri_m_2 {
+
+        .ri_m_2_h {
+            display: flex;
+            align-items: center;
+
+            h6 {
+                margin-right: auto;
+                font-size: 15px;
+            }
+        }
+
+        .ri_m_2_c {
+            font-size: 14px;
+        }
+    }
+}

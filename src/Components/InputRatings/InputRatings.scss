@@ -1,0 +1,29 @@
+.inputratings_main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .vr_stars {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.12);
+        }
+    }
+}
+
+@media (max-width:644px) {
+    .inputratings_main {
+    
+        .vr_stars {
+    
+            &:hover {
+                transform: scale(1);
+            }
+        }
+    }
+}

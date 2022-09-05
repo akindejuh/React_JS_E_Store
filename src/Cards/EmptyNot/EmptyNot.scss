@@ -1,0 +1,95 @@
+.emptynot_main {
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    background-color: rgba(70, 70, 70, 0.3);
+    border-radius: 4px;
+    display: flex;
+    box-shadow: 0.6px 2px 2px rgba(0, 0, 0, 0.2);
+
+    .emptynot_alert_1 {
+        width: 70px;
+        min-width: 70px;
+        max-width: 70px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        .emptynot_a_icon {
+            width: 45px;
+            min-width: 45px;
+            max-width: 45px;
+            height: 45px;
+            min-height: 45px;
+            max-height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(70, 70, 70, 0.35);
+            border-radius: 4px;
+        }
+    }
+
+    .emptynot_alert_2 {
+        width: 230px;
+        min-width: 230px;
+        max-width: 230px;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+
+        .emptynot_a_store {
+            margin-top: 8px;
+            background-color: rgba(70, 70, 70, 0.35);
+            width: 217px;
+            min-height: 25px;
+            border-radius: 3px;
+        }
+
+        .emptynot_a_product {
+            margin-top: 3px;
+            margin-bottom: 3px;
+            background-color: rgba(70, 70, 70, 0.35);
+            width: 217px;
+            min-height: 25px;
+            border-radius: 3px;
+        }
+
+        .emptynot_a_time {
+            margin-bottom: 10px;
+            background-color: rgba(70, 70, 70, 0.35);
+            width: 217px;
+            min-height: 40px;
+            border-radius: 4px;
+        }
+    }
+}
+
+
+@media (max-width:644px) {
+    .emptynot_main {
+        width: 97%;
+        min-width: 97%;
+        max-width: 97%;
+
+        .emptynot_alert_1 {
+            width: 20%;
+            min-width: 20%;
+            max-width: 20%;
+        }
+    
+        .emptynot_alert_2 {
+            width: 80%;
+            min-width: 80%;
+            max-width: 80%;
+    
+            .emptynot_a_store, 
+            .emptynot_a_product, 
+            .emptynot_a_time {
+                width: 97%;
+                min-width: 97%;
+                max-width: 97%;
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+.buy_airtime_page_main {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+    .b_a_p_wrapper {
+        background-color: white;
+        width: 360px;
+        min-width: 360px;
+        max-width: 360px;
+        height: 458px;
+        min-height: 458px;
+        max-height: 458px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 15px 15px rgba(0, 0, 0, 0.2);
+
+        .b_a_p_h {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+
+            .b_a_p_h_a {
+                transition: all 150ms ease-in-out;
+                position: absolute;
+                left: 3px;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            h1 {
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                color: rgb(74, 74, 173);
+                font-size: 20px;
+            }
+        }
+
+        .b_a_p_b {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+
+            h6 {
+                width: 100%;
+                text-align: left;
+                margin-top: 10px;
+                font-weight: bold;
+                color: rgb(146, 146, 146);
+            }
+
+            h5 {
+                width: 100%;
+                text-align: right;
+                margin-top: 10px;
+                font-weight: bold;
+                color: rgb(146, 146, 146);
+            }
+
+            input {
+                width: 100%;
+                align-self: center;
+                height: 25px;
+                border: none;
+                border-bottom: 1px solid rgb(141, 141, 141);
+                outline: none;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                letter-spacing: 0.2px;
+                font-weight: bold;
+                font-size: 16px;
+                transition: all 150ms ease-in-out;
+
+                &:focus {
+                    border-bottom: 2px solid rgb(74, 74, 173);
+                }
+            }
+
+            .b_a_p_btn {
+                background-color: rgb(74, 74, 173);
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                min-height: 48px;
+                width: 100%;
+                outline: none;
+                border: none;
+                justify-content: flex-end;
+                align-items: center;
+                padding-right: 10px;
+                border-radius: 4px;
+                box-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.2);
+                transition: all 150ms ease-in-out;
+    
+                &:hover {
+                    background-color: rgb(98, 98, 202);
+                    transform: scale(1.025);
+                }
+    
+                p {
+                    position: absolute;
+                    transform: translateX(-130px);
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: white;
+                }
+            }
+        }     
+    }
+}
+
+@media (max-width:720px) {
+    .buy_airtime_page_main {
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        .b_a_p_wrapper {
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            height: 500px;
+            min-height: 500px;
+            max-height: 500px;
+            padding: 20px;
+            border-radius: 0px;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+    
+            .b_a_p_h {
+    
+                .b_a_p_h_a {
+    
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+            }
+    
+            .b_a_p_b {
+
+                select {
+                    border: 2px solid rgb(141, 141, 141);
+    
+                    &:focus {
+                        border: 2px solid rgb(74, 74, 173);
+                    }
+                }
+    
+                .b_a_p_btn {
+    
+                    &:hover {
+                        transform: scale(1);
+                    }
+
+                    p {
+                        transform: translateX(-35vw);
+                    }
+                }
+            }         
+        }
+    }
+}

@@ -1,0 +1,303 @@
+.couriercard_main {
+  background-color: rgb(230, 230, 230);
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  height: 510px;
+  min-height: 510px;
+  max-height: 510px;
+  border-radius: 4px;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.2);
+  transition: all 150ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  .couriercard_image {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 70%;
+    min-height: 70%;
+    max-width: 70%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: relative;
+
+    img {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      height: 100%;
+      min-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+
+    .couriercard_fade {
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      transition: all 150ms ease-in-out;
+
+      &:hover {
+          background-color: rgba(0, 0, 0, 0.0);
+      }
+    }
+  }
+
+  .couriercard_info {
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    min-height: 30%;
+    max-height: 30%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 6px;
+
+    .couriercard_name {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    .couriercard_products {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 1px;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+          display: none;
+      }
+
+      span {
+        background-color: rgb(226, 229, 255);
+        width: 25px;
+        min-width: 25px;
+        max-width: 25px;
+        height: 25px;
+        min-height: 25px;
+        max-height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2px;
+        border-radius: 3px;
+      }
+    }
+
+    .couriercard_locations {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2px;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+          display: none;
+      }
+
+      span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: rgb(202, 228, 202);
+        height: 25px;
+        min-height: 25px;
+        max-height: 25px;
+        margin: 2px;
+        padding-left: 2px;
+        padding-right: 3px;
+        border-radius: 3px;
+        font-size: 12.5px;
+      }
+    }
+
+    .couriercard_transports {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2px;
+      overflow-y: hidden;
+      overflow-x: auto;
+
+      span {
+        background-color: rgb(255, 226, 226);
+        width: 25px;
+        max-width: 25px;
+        height: 25px;
+        max-height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2px;
+        border-radius: 3px;
+      }
+    }
+
+    .couriercard_ratings {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      h5 {
+        margin-left: 2px;
+        color: rgb(74, 74, 137);
+        font-weight: 600;
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+@media (max-width:644px) {
+
+  .couriercard_main {
+    width: 95vw;
+    min-width: 95vw;
+    max-width: 95vw;
+    min-height: 100px;
+    height: 100%;
+    border-radius: 3px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+  
+    &:hover {
+      transform: scale(1);
+    }
+  
+    .couriercard_image {
+      min-width: 35%;;
+      height: 100%;
+      min-height: 100%;
+      max-width: 100%;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      position: relative;
+  
+      img {
+        width: 31vw;
+        min-width: 31vw;
+        max-width: 31vw;
+        height: 31vw;
+        min-height: 31vw;
+        max-width: 31vw;
+        border-radius: 4px;
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+
+      .couriercard_fade {
+          display: none;
+      }
+    }
+  
+    .couriercard_info {
+      padding: 3px;
+      min-width: 65%;;
+      max-width: 100%;
+      height: 100%;
+      min-height: 100%;
+      border-top-right-radius: 4px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 4px;
+      padding: 6px;
+      display: flex;
+      flex-direction: column;
+  
+      .couriercard_name {
+        font-size: 12px;
+        margin-bottom: 1px;
+      }
+  
+      .couriercard_products {
+        flex-wrap: wrap;
+  
+        span {
+          width: 20px;
+          min-width: 20px;
+          max-width: 20px;
+          height: 20px;
+          min-height: 20px;
+          max-height: 20px;
+          margin: 2px;
+          border-radius: 1.5px;
+        }
+      }
+  
+      .couriercard_locations {
+        margin-bottom: 1px;
+        flex-wrap: wrap;
+  
+        span {
+          height: 20px;
+          min-height: 20px;
+          max-height: 20px;
+          margin: 2px;
+          padding-left: 1px;
+          padding-right: 3px;
+          border-radius: 2px;
+          font-size: 11px;
+        }
+      }
+  
+      .couriercard_transports {
+        margin-bottom: 1px;
+  
+        span {
+          width: 20px;
+          max-width: 20px;
+          height: 20px;
+          max-height: 20px;
+          margin: 2px;
+          border-radius: 2px;
+        }
+      }
+  
+      .couriercard_ratings {
+  
+        h5 {
+          margin-left: 1px;
+          margin-right: 2px;
+          font-size: 13px;
+        }
+      }
+
+      button {
+        width: 80px;
+        height: 33px;
+        margin-left: auto;
+        border: 1px solid rgb(74, 74, 173);
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.0);
+        color: rgb(74, 74, 173);
+        font-size: 14px;
+        outline: none;
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+          background-color: rgb(107, 107, 218);
+        }
+      }
+    }
+  }
+}

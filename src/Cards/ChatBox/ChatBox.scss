@@ -1,0 +1,36 @@
+.chatbox_main {
+    margin: 1.5px;
+    display: flex;
+    margin-bottom: 15px;
+
+    .chatbox_inner_main {
+        padding: 4px 6px;
+        border-radius: 5px;
+
+        max-width: 55vw;
+        font-size: 15px;
+
+        &::before, ::after {
+            content: '';
+            position: absolute;
+            background-color: red;
+            bottom: -50px;
+            min-height: 50px;
+            min-width: 35px;
+            border-bottom-left-radius: 25px;
+
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .chatbox_main {
+        margin-bottom: 10px;
+    
+        .chatbox_inner_main {
+            border-radius: 4px;
+            max-width: 80vw;
+            font-size: 13px;
+        }
+    }
+}

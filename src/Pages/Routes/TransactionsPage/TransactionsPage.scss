@@ -1,0 +1,142 @@
+.transactions_main {
+    min-height: 85vh;
+ 
+    .trans_main_header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        position: relative;
+
+        .trans_m_h_arr {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            position: absolute;
+            left: 0;
+            margin-left: 30px;
+            transition: all 150ms ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .trans_main_wrapper {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+
+        .trans_m_w_1 {
+            min-width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .trans_m_w_pc {
+                margin-top: 10px;
+                width: 300px;
+                height: 440px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                background-color: rgb(250, 250, 250);
+                border-radius: 5px;
+                box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.12);
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                h2 {
+                    color: rgb(74, 74, 173);
+                    font-size: 25px;
+                    margin-top: 10px;
+                    margin-bottom: -2px;
+                }
+                
+                .trans_m_w_pc_i {
+                    margin-top: 93px;
+                    width: 100px;
+                    height: 100px;
+                    transform: scale(2.5);
+                }
+                
+                p {
+                    position: absolute;
+                    bottom: 0;
+                    margin-bottom: 70px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    background-color: rgba(0, 160, 0, 0.2);
+                    padding: 3px 5px;
+                    border-radius: 3px;
+                    
+                    span {
+                        color: rgb(0, 160, 0);
+                    }
+                }
+                
+                .trans_m_w_pc_loss {
+                    margin-bottom: 20px;
+                    background-color: rgba(230, 0, 0, 0.2);
+                    
+                    span {
+                        color: rgb(230, 0, 0);
+                    }
+                }
+            }
+
+            .trans_m_w_1_filter {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        .trans_m_w_2 {
+            min-width: 75%;
+            display: grid;
+            padding: 10px;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            justify-items: center;
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .transactions_main {
+
+        .trans_main_header {
+    
+            .trans_m_h_arr {
+                margin-left: 12px;
+    
+                &:hover {
+                    transform: scale(1);
+                }
+            }
+        }
+    
+        .trans_main_wrapper {
+            flex-direction: column;
+            margin-top: 10px;
+
+            .trans_m_w_1 {
+
+                .trans_m_w_pc {
+                    border-radius: 3px;
+                    width: 92%;
+                } 
+            }
+
+            .trans_m_w_2 {
+                margin-top: 20px;
+            }
+        }
+    }
+}

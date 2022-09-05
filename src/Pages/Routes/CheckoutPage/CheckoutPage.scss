@@ -1,0 +1,510 @@
+.checkoutpage_main {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .cop_h {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+        .cop_h_a {
+            position: absolute;
+            left: 12px;
+            top: 5px;
+            transition: all 150ms ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        h2 {
+            color: rgb(74, 74, 173);
+        }
+    }
+
+    .checkoutpage_delivery {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: rgb(74, 74, 173);
+        }
+
+        .cop_d_d {
+            color: rgb(95, 95, 95);
+        }
+
+        h4 {
+            margin-bottom: 3px;
+        }
+
+        h6 {
+            font-size: 14px;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            background-color: rgb(74, 74, 173);
+            outline: none;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.1);
+            transition: all 150ms ease-in-out;
+            height: 40px;
+            min-height: 40px;
+            max-height: 40px;
+            width: 120px;
+            align-self: flex-end;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.03);
+                background-color: rgb(102, 102, 212);
+            }
+
+            p {
+                font-size: 16px;
+                color: white;
+                margin-left: 3px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .cop_mt {
+        color: rgb(95, 95, 95);
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .cop_btn {
+        display: flex;
+        align-items: center;
+        background-color: rgb(74, 74, 173);
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        padding-left: 12px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-right: 12px;
+        box-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.1);
+        transition: all 150ms ease-in-out;
+        height: 40px;
+        min-height: 40px;
+        max-height: 40px;
+        width: 120px;
+        margin-left: auto;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.03);
+            background-color: rgb(102, 102, 212);
+        }
+
+        p {
+            font-size: 15px;
+            color: white;
+            margin-left: 3px;
+        }
+    }
+
+    .cop_products_group {
+        background-color: rgba(74, 74, 173, 0.1);
+        // background-color: rgb(245, 245, 245);
+        // margin-top: 10px;
+        // margin-bottom: 10px;
+        padding: 10px;
+        padding-bottom: 10px;
+        // border-radius: 4px;
+        width: 100%;
+        align-self: center;
+
+        .cpg_h {
+            margin-left: 1px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            
+            h3 {
+                margin-left: 5px;
+                color: rgb(74, 74, 173);
+            }
+        }
+        
+        .cop_products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: flex-start;
+        }
+
+        .cop_nts {
+            margin: 20px 0px;
+
+            h2 {
+                color: rgb(95, 95, 95);
+                font-size: 15px;
+                margin-bottom: 4px;
+            }
+
+            .cop_nts_n {
+                background-color: rgba(250, 250, 250, 1);
+                border-radius: 4px;
+                display: flex;
+
+                .cop_nts_n_i {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 45px;
+                    min-width: 45px;
+                    max-width: 45px;
+                    height: 45px;
+                    min-height: 45px;
+                    max-height: 45px;
+                }
+
+                input {
+                    flex-grow: 1;
+                    height: 45px;
+                    min-height: 45px;
+                    max-height: 45px;
+                    outline: none;
+                    border: none;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    padding-left: 8px;
+                    font-size: 15px;
+                    background-color: rgba(0, 0, 0, 0);
+                }
+            }
+        }
+
+        .cop_hr {
+            margin: 0px;
+            // border-bottom: 1px solid rgb(73, 73, 73);
+        }
+
+        .cop_payment_info {
+            padding: 0px;
+            padding-top: 5px;
+
+            .cop_p_i_w {
+                display: flex;
+                margin-top: 1px;
+
+                p {
+                    margin-right: auto;
+                }
+
+                h4 {
+                    font-size: 13px;
+                    color: rgb(95, 95, 95);
+                    display: flex;
+
+                    span {
+                        font-size: 17px;
+                        color: black;
+                        margin-left: 4px;
+                        transform: translateY(-2px);
+                    }
+
+                    div {
+                        font-size: 17px;
+                        color: rgb(74, 74, 173);
+                        margin-left: 4px;
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+    }
+
+    #cop_products_group {
+        background-color: rgba(74, 74, 173, 0.05);
+    }
+
+    .cop_hr {
+        margin: 10px;
+        // border-bottom: 1px solid rgb(73, 73, 73);
+    }
+
+    .cop_orders {
+        margin: 5px 10px;
+
+        h2 {
+            color: rgb(95, 95, 95);
+        }
+
+        .cop_orders_summary {
+
+            .cop_o_s_i {
+                display: flex;
+                margin-top: 1px;
+
+                p {
+                    margin-right: auto;
+                }
+
+                h4 {
+                    font-size: 13px;
+                    color: rgb(95, 95, 95);
+                    display: flex;
+
+                    span {
+                        font-size: 17px;
+                        color: black;
+                        margin-left: 4px;
+                        transform: translateY(-2px);
+                    }
+
+                    div {
+                        font-size: 17px;
+                        color: rgb(74, 74, 173);
+                        margin-left: 4px;
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+    }
+
+    .cop_pyt_op {
+        padding: 10px;
+
+        h2 {
+            margin-top: -10px;
+            margin-bottom: 5px;
+            color: rgb(95, 95, 95);
+        }
+
+        .cop_pt_w {
+            display: flex;
+            background-color: rgba(254, 254, 254, 0.5);
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-left: 4px;
+            border-radius: 4px;
+            height: 55px;
+            align-items: center;
+            
+            .cop_pt_w_i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 49px;
+                height: 49px;
+                background-color: rgba(74, 74, 173, 0.1);
+                border-radius: 4px;
+            }
+
+            .cop_pt_w_d {
+                margin-left: 5px;
+                margin-right: auto;
+
+                h4 {
+                    color: rgb(50, 50, 50);
+                }
+
+                p {
+                    font-weight: bold;
+                    font-size: 13px;
+                }
+            }
+
+            .cop_pt_w_r {
+                display: flex;
+                align-items: center;
+                margin-right: 5px;
+
+                input {
+                    width: 17px;
+                    height: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 644px) {
+
+    .checkoutpage_main {
+        // height: calc(100% - 100px);
+        // min-height: calc(100% - 100px);
+        // margin-top: 50px;
+
+        .cop_h {
+            margin-bottom: 15px;
+
+            .cop_h_a {
+                left: 15px;
+
+                &:hover {
+                    transform: scale(1);
+                }
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        .checkoutpage_delivery {
+            padding-bottom: 0px;
+
+            h2 {
+                margin-bottom: 5px;
+            }
+
+            .cop_d_d {
+                color: rgb(95, 95, 95);
+            }
+    
+            h4 {
+                margin-bottom: 3px;
+                font-size: 14px;
+            }
+    
+            h6 {
+                font-size: 12px;
+            }
+    
+            p {
+                margin-top: 5px;
+                font-size: 12.5px;
+            }
+    
+            button {
+                height: 38px;
+                min-height: 38px;
+                max-height: 38px;
+                width: 100px;
+                margin-top: 5px;
+    
+                &:hover {
+                    transform: scale(1);
+                }
+    
+                p {
+                    font-size: 14px;
+                    margin-left: 4px;
+                }
+            }
+        }
+
+        .cop_products_group {
+            padding: 2px;
+            margin: 3px;
+            padding-bottom: 15px;
+            margin-top: 10px;
+            margin-bottom: -10px;
+            width: 100%;
+
+            .cpg_h {
+                margin-top: 10px;
+                margin-bottom: 5px;
+                padding-left: 10px;
+
+                h3 {
+                    margin-left: 4px;
+                }
+            }
+
+            .cop_products {
+                justify-content: center;
+                gap: 15px;
+                padding: 10px;
+            }
+
+            .cop_nts {
+                margin: 10px 0px;
+                padding: 0px 10px;
+    
+                h2 {
+                    font-size: 14px;
+                }
+    
+                .cop_nts_n {
+    
+                    .cop_nts_n_i {
+                        width: 38px;
+                        min-width: 38px;
+                        max-width: 38px;
+                        height: 38px;
+                        min-height: 38px;
+                        max-height: 38px;
+                    }
+    
+                    input {
+                        height: 38px;
+                        min-height: 38px;
+                        max-height: 38px;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .cop_hr {
+                margin: 0px 10px;
+            }
+
+            .cop_payment_info {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .cop_orders {
+            margin-top: 20px;
+        }
+
+        .cop_btn {
+            padding-left: 3px;
+            padding-right: 5px;
+            padding-top: 1px;
+            padding-bottom: 3px;
+            height: 38px;
+            min-height: 38px;
+            max-height: 38px;
+            width: 100px;
+
+            &:hover {
+                transform: scale(1);
+            }
+        }
+
+        .cop_mt {
+            font-size: 13px;
+        }
+    }
+}

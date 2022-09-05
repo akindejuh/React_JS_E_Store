@@ -1,0 +1,185 @@
+.couponspage_main {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+
+    .couponspage_main_h {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        position: relative;
+
+        .couponspage_main_h_a {
+            margin-left: 13px;
+            transition: all 150ms ease-in-out;
+            z-index: 20;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        h2 {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            color: rgb(74, 74, 173);
+            margin-top: 5px;
+        }
+    }
+
+    .couponspage_p_f {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        .couponspage_p_f_btn {
+            background-color: rgb(255, 255, 255);
+            margin: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 7px 5px 7px 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0.6px 1px 1px rgba(0, 0, 0, 0.2);
+            transition: all 150ms ease-in-out;
+
+            &:hover {
+                background-color: rgb(235, 235, 235);
+            }
+
+            p {
+                font-size: 13px;
+                margin-left: 5px;
+                color: rgb(74, 74, 173);
+                font-weight: bold;
+            }
+        }
+
+        #couponspage_p_f_btn {
+            background-color: rgb(74, 74, 173);
+
+            p {
+                color: white;
+                font-weight: 400;
+            }
+
+            &:hover {
+                background-color: rgb(88, 88, 211);
+            }
+        }
+    }
+
+    .couponspage_p_g {
+        display: grid;
+        padding: 5px;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-items: center;
+
+        .couponspage_p_g_i {
+            background-color: rgba(74, 74, 173, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            margin-top: 0px;
+            width: 300px;
+            min-width: 300px;
+            max-width: 300px;
+            height: 120px;
+            max-height: 120px;
+            align-items: center;
+            padding: 5px;
+            padding-left: 8px;
+            border-radius: 5px;
+            box-shadow: 0.6px 1px 1px rgba(0, 0, 0, 0.1);
+    
+            .couponspage_p_g_i_p {
+                font-size: 13px;
+                font-weight: bold;
+                margin-bottom: 5px;
+                padding: 3px;
+            }
+    
+            .couponspage_p_g_i_btn {
+                outline: none;
+                border: none;
+                background-color: rgb(74, 74, 173);
+                margin: 2px 1px 4px 1px;
+                padding: 8px 3px;
+                border-radius: 5px;
+                color: white;
+                align-self: center;
+                transition: all 150ms ease-in-out;
+                min-width: 110px;
+                cursor: pointer;
+                align-self: flex-end;
+                margin-right: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: auto;
+    
+                &:hover {
+                    transform: scale(1.03);
+                    background-color: rgb(88, 88, 211);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:644px) {
+
+    .couponspage_main {
+        height: calc(100% - 100px);
+        min-height: calc(100% - 100px);
+        margin-top: 50px;
+
+        .couponspage_main_h {
+    
+            .couponspage_main_h_a {
+    
+                &:hover {
+                    transform: scale(1);
+                }
+            }
+    
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        .couponspage_p_g {
+
+            .couponspage_p_g_i {
+                width: 92%;
+                min-width: 92%;
+                max-width: 92%;
+                margin-bottom: 3px;
+                margin-left: 3px;
+                margin-right: 3px;
+    
+                .couponspage_p_g_i_p {
+                    font-size: 12px;
+                }
+    
+                .couponspage_p_g_i_btn {
+                    width: 100px;
+                    min-width: 100px;
+                    max-width: 100px;
+                    height: 36px;
+                    min-height: 36px;
+                    max-height: 36px;
+    
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}

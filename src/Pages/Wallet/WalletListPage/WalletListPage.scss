@@ -1,0 +1,70 @@
+.walletlistpage_main {
+    padding: 10px;
+    min-height: 85vh;
+
+    .wlp_h {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+
+        .wlp_h_a {
+            transition: all 150ms ease-in-out;
+            position: absolute;
+            left: 3px;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        h1 {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgb(74, 74, 173);
+            font-size: 20px;
+        }
+    }
+
+    .wlp_info {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .wlp_grid {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:720px) {
+    .walletlistpage_main {
+        padding: 20px;
+    
+        .wlp_h {
+            margin-top: 0px;
+    
+            .wlp_h_a {
+    
+                &:hover {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        .wlp_grid {
+            grid-template-columns: repeat(auto-fit, minmax(43vw, 1fr));
+        }
+    }
+}

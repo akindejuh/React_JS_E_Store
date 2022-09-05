@@ -1,0 +1,104 @@
+.chats_main {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .chats_m_grid {
+        display: grid;
+        padding: 10px;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-items: center; 
+
+        .chat_warning {
+            display: flex;
+            flex-direction: row;
+            padding: 6px;
+            width: 300px;
+            min-width: 300px;
+            max-width: 300px;
+            background-color: rgba(74, 74, 173, 0.2);
+            border-radius: 4px;
+            display: flex;
+            box-shadow: 0.6px 2px 2px rgba(0, 0, 0, 0.2);
+
+            .chat_w_icon {
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .chat_w_wrapper {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+
+                .chat_w_text {
+                    font-size: 12px;
+                    font-weight: bold;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                }
+
+                .chat_w_btn {
+                    color: white;
+                    font-size: 14px;
+                    text-decoration: none;
+                    width: 96%;
+                    min-width: 96%;
+                    max-width: 96%;
+                    align-self: flex-start;
+                    height: 42px;
+                    min-height: 42px;
+                    max-height: 42px;
+                    border-radius: 4px;
+                    margin-bottom: 10px;
+                    background-color: rgb(74, 74, 173);
+                    margin-top: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0.6px 2px 2px rgba(0, 0, 0, 0.1);
+                    transition: all 150ms ease-in-out;
+        
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+        
+                    &:visited {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:720px) {
+
+    .chats_main {
+        padding-top: 0px;
+        
+        .chats_m_grid {
+
+            .chat_warning {
+                width: 97%;
+                min-width: 97%;
+                max-width: 97%;  
+
+                .chat_w_wrapper {
+                    
+                    .chat_w_btn {
+
+                        &:hover {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

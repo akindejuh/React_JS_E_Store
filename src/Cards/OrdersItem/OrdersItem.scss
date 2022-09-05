@@ -1,0 +1,370 @@
+.orderitem_main {
+    margin: 5px;
+    padding: 10px;
+    width: 550px;
+    min-width: 550px;
+    max-width: 550px;
+    background-color: rgba($color: rgb(250, 250, 250), $alpha: 1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0.6px 10px 10px rgba(0, 0, 0, 0.2);
+
+    .orderitem_del_status {
+        display: flex;
+        flex-direction: column;
+        margin-right: 8px;
+
+        .oi_del_icon {
+            background-color: rgba($color: rgb(74, 74, 173), $alpha: 0.2);
+            width: 42px;
+            min-width: 42px;
+            max-width: 42px;
+            height: 42px;
+            min-height: 42px;
+            max-height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .oi_del_tracker {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+
+            .oi_del_tracker_wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .oi_del_t_transport {
+                    background-color: rgba($color: rgb(74, 74, 173), $alpha: 0.2);
+                    width: 42px;
+                    min-width: 42px;
+                    max-width: 42px;
+                    height: 42px;
+                    min-height: 42px;
+                    max-height: 42px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 3px;
+                    margin-top: 3px;
+                }
+
+                .oi_del_t_dot {
+                    width: 10px;
+                    min-width: 10px;
+                    max-width: 10px;
+                    height: 10px;
+                    min-height: 10px;
+                    max-height: 10px;
+                    border-radius: 50%;
+                    background-color: rgb(73, 73, 73);
+                    margin-bottom: 3px;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+
+    .orderitem_info {
+        display: flex;
+        flex-direction: row;
+
+        .orderitem_info_1 {
+            width: 236px;
+            min-width: 236px;
+            max-width: 236px;
+            margin-right: 8px;
+
+            .oi_i_1_header {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 12px;
+
+                .oi_i_1_h_h1 {
+                    color: rgb(74, 74, 173);
+                    font-size: 20px;
+                }
+
+                .oi_i_1_h_span {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    background-color: rgb(74, 74, 173);
+                    margin-left: auto;
+                    margin-right: 5px;
+                    border-radius: 4px;
+                    padding: 5px 4px;
+
+                    p {
+                        color: white;
+                        font-size: 10.5px;
+                        margin-left: 3px;
+                        margin-right: 2px;
+                    }
+                }
+            }
+
+            .oi_i_1_p {
+                font-size: 12.8px;
+                margin-bottom: 1px;
+
+                span {
+                    color: rgb(74, 74, 173);
+                    cursor: pointer;
+                }
+            }
+
+            .oi_i_1_h4 {
+                font-weight: bold;
+                font-size: 12px;
+                margin-bottom: 10px;
+                margin-right: 5px;
+            }
+        }
+
+        .orderitem_info_2 {
+            width: 236px;
+            min-width: 236px;
+            max-width: 236px;
+            display: flex;
+            flex-direction: column;
+
+            .oi_i_2_p {
+                font-size: 12.8px;
+                margin-bottom: 1px;
+            }
+
+            .oi_i_2_h4 {
+                font-weight: bold;
+                font-size: 12px;
+                margin-bottom: 10px;
+                margin-right: 3px;
+            }
+
+            .oi_i_2_p_ins {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                font-size: 12px;
+                font-weight: bold;
+                margin-top: -3px;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 2px;
+                }
+            }
+
+            .oi_i_2_map_btn {
+                display: flex;
+                flex-direction: row;
+                min-width: 120px;
+                background-color: rgb(255, 255, 255);
+                align-items: center;
+                justify-content: center;
+                align-self: flex-start;
+                height: 35px;
+                margin: 10px 0px 10px 0px;
+                border-radius: 5px;
+                padding: 3px;
+                box-shadow: 0.6px 4px 4px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+                transition: all 150ms ease-in-out;
+
+                &:hover {
+                    transform: scale(1.03);
+                    background-color: rgb(242, 242, 242);
+                }
+
+                p {
+                    color: rgb(74, 74, 173);
+                    margin-left: 1px;
+                    margin-right: 5px;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+            }
+
+            .oi_i_2_fd_btn {
+                min-width: 120px;
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(74, 74, 173);
+                align-items: center;
+                justify-content: center;
+                align-self: flex-start;
+                height: 35px;
+                margin: 5px 0px 10px 0px;
+                border-radius: 5px;
+                padding: 3px;
+                box-shadow: 0.6px 4px 4px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+                transition: all 150ms ease-in-out;
+
+                &:hover {
+                    transform: scale(1.03);
+                    background-color: rgb(95, 95, 209);
+                }
+
+                p {
+                    color: white;
+                    margin-left: 1px;
+                    margin-right: 5px;
+                    font-size: 14px;
+                }
+            }
+
+            .oi_i_2_dfiled {
+                display: flex;
+                flex-direction: column;
+
+                .oi_i_2_df_info {
+                    background-color: rgba($color: rgb(74, 74, 173), $alpha: 0.2);
+                    border-radius: 5px;
+                    box-shadow: 0.6px 1px 1px rgba(0, 0, 0, 0.1);
+                    padding: 6px;
+                    display: flex;
+                    flex-direction: column;
+
+                    h4 {
+                        font-size: 14px;
+                    }
+
+                    p {
+                        font-size: 12.5px;
+                    }
+
+                    .oi_i_2_df_dp {
+                        outline: none;
+                        border: none;
+                        background-color: rgb(74, 74, 173);
+                        margin: 9px 1px 6px 1px;
+                        padding: 10px 3px;
+                        border-radius: 5px;
+                        color: white;
+                        align-self: center;
+                        width: 98%;
+                        transition: all 150ms ease-in-out;
+                        cursor: pointer;
+    
+                        &:hover {
+                            transform: scale(1.03);
+                            background-color: rgb(95, 95, 209);
+                        }
+                    }
+
+                    .oi_i_2_df_cd {
+                        outline: none;
+                        border: none;
+                        background-color: rgb(238, 238, 238);
+                        margin: 2px 1px 5px 1px;
+                        padding: 10px 3px;
+                        border-radius: 5px;
+                        color: rgb(74, 74, 173);
+                        font-weight: bold;
+                        align-self: center;
+                        width: 98%;
+                        transition: all 150ms ease-in-out;
+                        cursor: pointer;
+    
+                        &:hover {
+                            transform: scale(1.03);
+                            background-color: rgb(248, 248, 248);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .orderitem_main {
+        margin: 0px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 7px;
+        width: 97%;
+        min-width: 97%;
+        max-width: 97%;
+    
+        .orderitem_del_status {
+            margin-right: 8px;
+        }
+    
+        .orderitem_info {
+            flex-direction: column;
+    
+            .orderitem_info_1 {
+                width: 100%;
+                min-width: 100%;
+                max-width: 100%;
+                margin-right: 8px;
+                margin-bottom: 10px;
+    
+                .oi_i_1_header {
+        
+                    .oi_i_1_h_span {
+                        border-radius: 4px;
+    
+                        p {
+                            font-size: 10px;
+                            margin-left: 2px;
+                            margin-right: 1px;
+                        }
+                    }
+                }
+            }
+    
+            .orderitem_info_2 {
+                width: 100%;
+                min-width: 100%;
+                max-width: 100%;            
+    
+                .oi_i_2_map_btn {
+
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+    
+                .oi_i_2_fd_btn {
+    
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+    
+                .oi_i_2_dfiled {
+    
+                    .oi_i_2_df_info {
+    
+                        .oi_i_2_df_dp {
+    
+                            &:hover {
+                                transform: scale(1);
+                            }
+                        }
+        
+                        .oi_i_2_df_cd {
+                            
+                            &:hover {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

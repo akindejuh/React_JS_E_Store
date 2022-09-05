@@ -1,0 +1,130 @@
+.navlinks_main {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    .navlinks_wrapper {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .navlinks_large {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+
+            .nvlk_page_i_large {
+                width: 4px;
+                min-width: 4px;
+                max-width: 4px;
+                height: 100%;
+                min-height: 100%;
+                max-height: 100%;
+                background-color: rgb(74, 74, 173);
+                animation-name: navindicator;
+                animation-duration: 0.3s;
+                animation-delay: 0s;
+                border-top-right-radius: 2px;
+                border-bottom-right-radius: 2px;
+                transform: scale(0.85);
+                display: block;
+            }
+
+            #nvlk_page_i_large {
+                display: none;
+            }
+
+            p {
+                // background-color: rgba(74, 74, 173, 0.24);
+                border-radius: 3px;
+                margin: 4px 2px;
+                margin-left: 7px;
+                flex-grow: 1;
+                line-height: 42px;
+                font-size: 15px;
+                font-weight: bold;
+                padding-left: 7px;
+                transition: all 150ms ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .navlinks_small {
+            width: 50px;
+            min-width: 50px;
+            max-width: 50px;
+            height: 50px;
+            min-height: 50px;
+            max-height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            .nvlk_page_i_small {
+                width: 4px;
+                min-width: 4px;
+                max-width: 4px;
+                height: 100%;
+                min-height: 100%;
+                max-height: 100%;
+                background-color: rgb(74, 74, 173);
+                animation-name: navindicator;
+                animation-duration: 0.3s;
+                animation-delay: 0s;
+                border-top-right-radius: 2px;
+                border-bottom-right-radius: 2px;
+                transform: scale(0.85);
+                display: block;
+                transition: all 150ms ease-in-out;
+            }
+
+            #nvlk_page_i_small {
+                display: none;
+            }
+
+            .nvlk_page_icon {
+                width: 46px;
+                min-width: 46px;
+                height: 46px;
+                min-height: 46px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-self: center;
+                // background-color: rgba(74, 74, 173, 0.24);
+                transform: scale(0.9);
+                border-radius: 3px;
+                transition: all 150ms ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(0.98);
+                }
+            }
+        }
+    }
+}
+
+@keyframes navindicator {
+    from {
+        transform: scaleY(0.5);
+    }
+    to {
+        transform: scaleY(0.85);
+    }
+}

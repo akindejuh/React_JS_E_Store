@@ -1,0 +1,81 @@
+.customradio_main {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 5px;
+    background-color: rgb(225, 225, 225);
+    box-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.137);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    padding-left: 4px;
+    padding-right: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: all 150ms ease-in-out;
+
+    .custom_radio_icon {
+        color: rgb(74, 74, 173);
+    }
+    #custom_radio_icon {
+        color: white;
+    }
+
+    &:hover {
+        transform: scale(1.035);
+    }
+
+    .radio_icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        border: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .radio_name {
+        margin-left: 2.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        color: rgb(74, 74, 173);
+    }
+}
+
+#customradio_main {
+    background-color: rgb(74, 74, 173);
+    color: white;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.035);
+    }
+}
+
+@media (max-width:900px) {
+
+    .customradio_main {
+    
+        &:hover {
+            transform: scale(1);
+        }
+    }
+
+    #customradio_main {
+    
+        &:hover {
+            transform: scale(1);
+        }
+    }
+}

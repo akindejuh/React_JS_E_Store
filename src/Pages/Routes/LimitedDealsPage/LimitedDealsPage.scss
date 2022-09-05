@@ -1,0 +1,148 @@
+.limiteddealspage_main {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    
+    .ld_wrapper {
+        background-color: rgba(245, 245, 245, 0.9);
+        align-self: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2);
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        .ld_header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 10px;
+            justify-content: flex-end;
+            position: relative;
+            margin-right: 2px;
+
+            .ld_h_back {
+                position: absolute;
+                width: 45px;
+                height: 45px;
+                // margin-top: 15px;
+                margin-left: -8px;
+                transition: all 150ms ease-in-out;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+                cursor: pointer;
+                left: 0;
+
+                &:hover {
+                    transform: scale(1.04);
+                }
+            }
+
+            h1 {
+                margin-left: 10px;
+                color: rgb(74, 74, 173);
+                line-height: 70px;
+            }
+        }
+
+        .ld_container {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: auto auto auto auto;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .limiteddealspage_main {
+
+        .ld_searchbar {
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .ld_wrapper {
+
+            .ld_container {
+                grid-template-columns: auto auto auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+
+    .limiteddealspage_main {
+
+        .ld_wrapper {
+
+            .ld_container {
+                grid-template-columns: auto auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 644px) {
+
+    .limiteddealspage_main {
+        background-color: rgba(245, 245, 245, 0.9);
+        height: calc(100% - 100px);
+        min-height: calc(100% - 100px);
+        margin-top: 50px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        .ld_wrapper {
+            width: 100%;
+            border-radius: 0px;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+            padding-bottom: 20px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+            .ld_header {
+                margin-bottom: 10px;
+
+                .ld_h_back {
+                    width: 35px;
+                    height: 35px;
+                    margin-left: -10px;
+    
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+
+                h1 {
+                    font-size: 18px;
+                    line-height: 40px;
+                    margin-left: 5px;
+                }
+            }
+
+            .ld_container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                column-gap: 15px;
+                row-gap: 0px;
+            }
+        }
+    }
+}

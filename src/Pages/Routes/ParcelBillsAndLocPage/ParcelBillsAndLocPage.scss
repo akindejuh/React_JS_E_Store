@@ -1,0 +1,447 @@
+.parcelbillsandlocpage_main {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .pbl_m_w {
+        background-color: rgb(250, 250, 250);
+        width: 730px;
+        margin: 50px;
+        border-radius: 6px;
+        box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+
+        .pbl_h {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 30px;
+
+            .pbl_h_a {
+                position: absolute;
+                left: 10px;
+                transition: all 150ms ease-in-out;
+                cursor: pointer;
+                top: 5px;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            h2 {
+                color: rgb(74, 74, 173);
+            }
+        }
+    
+        .pbm_delivery {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+    
+            h2 {
+                font-size: 16px;
+                margin-bottom: 10px;
+                color: rgb(74, 74, 173);
+            }
+    
+            .pbm_d_d {
+                color: rgb(95, 95, 95);
+            }
+    
+            h4 {
+                margin-bottom: 3px;
+            }
+    
+            h6 {
+                font-size: 14px;
+            }
+    
+            p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+    
+            button {
+                display: flex;
+                align-items: center;
+                background-color: rgb(74, 74, 173);
+                outline: none;
+                border: none;
+                border-radius: 4px;
+                box-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.1);
+                transition: all 150ms ease-in-out;
+                height: 40px;
+                min-height: 40px;
+                max-height: 40px;
+                width: 120px;
+                align-self: flex-end;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+                cursor: pointer;
+    
+                &:hover {
+                    transform: scale(1.03);
+                    background-color: rgb(102, 102, 212);
+                }
+    
+                p {
+                    font-size: 16px;
+                    color: white;
+                    margin-left: 3px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .pbm_hr {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .pbm_pv {
+            padding: 10px;
+
+            h2 {
+                font-size: 16px;
+                margin-bottom: 10px;
+                color: rgb(74, 74, 173);
+            }
+
+            input {
+                width: 100%;
+                align-self: center;
+                min-height: 38px;
+                border: none;
+                margin-top: 3px;
+                outline: none;
+                margin-bottom: 12px;
+                transition: all 150ms ease-in-out;
+                background-color: rgb(225, 225, 225);
+                border-radius: 5px;
+                padding-left: 8px;
+                padding-right: 8px;
+
+                &:focus {
+                    background-color: rgb(235, 235, 235);
+                }
+            }
+        }
+
+        .pbm_courier_c {
+            padding: 10px;
+
+            h2 {
+                font-size: 16px;
+                margin-bottom: 10px;
+                color: rgb(74, 74, 173);
+            }
+
+            select {
+                width: 100%;
+                align-self: center;
+                min-height: 38px;
+                border: none;
+                margin-top: 3px;
+                outline: none;
+                margin-bottom: 12px;
+                transition: all 150ms ease-in-out;
+                background-color: rgb(225, 225, 225);
+                border-radius: 5px;
+                padding-left: 8px;
+
+                &:focus {
+                    background-color: rgb(235, 235, 235);
+                }
+            }
+
+            h5 {
+                
+                span {
+                    color: rgb(74, 74, 173);
+                    margin-right: 4px;
+                }
+            }
+        }
+
+        .pbm_orders {
+            padding: 10px;
+            margin-top: 0px;
+    
+            h2 {
+                color: rgb(95, 95, 95);
+            }
+    
+            .pbm_orders_summary {
+    
+                .pbm_o_s_i {
+                    display: flex;
+                    margin-top: 1px;
+    
+                    p {
+                        margin-right: auto;
+                        font-size: 14px;
+                    }
+    
+                    h4 {
+                        font-size: 13px;
+                        color: rgb(95, 95, 95);
+                        display: flex;
+    
+                        span {
+                            font-size: 17px;
+                            color: black;
+                            margin-left: 4px;
+                            transform: translateY(-2px);
+                        }
+                    }
+                }
+            }
+
+            .pbm_imp {
+                margin-top: 10px;
+
+                .pbm_imp_h {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 2px;
+
+                    h3 {
+                        margin-left: 5px;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                h4 {
+                    width: 100%;
+                    text-align: right;
+                    color: rgb(74, 74, 173);
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .pbm_mt {
+            color: rgb(95, 95, 95);
+            font-weight: bold;
+            font-size: 14px;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+
+        .pbm_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(74, 74, 173);
+            outline: none;
+            border: none;
+            border-radius: 4px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            box-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.1);
+            transition: all 150ms ease-in-out;
+            height: 40px;
+            min-height: 40px;
+            max-height: 40px;
+            width: 120px;
+            margin-left: auto;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            cursor: pointer;
+    
+            &:hover {
+                transform: scale(1.03);
+                background-color: rgb(102, 102, 212);
+            }
+    
+            p {
+                font-size: 15px;
+                color: white;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+
+    .parcelbillsandlocpage_main {
+    
+        .pbl_m_w {
+            width: 100%;
+            margin: 0px;
+            border-radius: 0px;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+    
+            .pbl_h {
+                margin-top: 10px;
+                margin-bottom: 10px;
+    
+                .pbl_h_a {
+                    left: 12px;
+    
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+    
+                h2 {
+                    font-size: 20px;
+                    margin-top: 3px;
+                }
+            }
+        
+            .pbm_delivery {
+        
+                h2 {
+                    margin-bottom: 5px;
+                }
+        
+                h4 {
+                    margin-bottom: 0px;
+                }
+        
+                h6 {
+                    font-size: 13px;
+                }
+        
+                p {
+                    margin-top: 3px;
+                    margin-bottom: 3px;
+                    font-size: 12px;
+                }
+        
+                button {
+                    height: 35px;
+                    min-height: 35px;
+                    max-height: 35px;
+                    width: 100px;
+        
+                    &:hover {
+                        transform: scale(1);
+                    }
+        
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+    
+            .pbm_pv {
+                padding-top: 5px;
+    
+                h2 {
+                    margin-bottom: 0px;
+                }
+    
+                input {
+                    min-height: 35px;
+                    border-radius: 4px;
+                    padding-left: 7px;
+                    padding-right: 7px;
+                }
+            }
+    
+            .pbm_courier_c {
+                padding: 10px;
+                padding-top: 5px;
+    
+                h2 {
+                    margin-bottom: 0px;
+                }
+    
+                select {
+                    min-height: 35px;
+                    border-radius: 4px;
+                    padding-left: 4px;
+                }
+    
+                h5 {
+                    margin-top: -5px;
+                }
+            }
+    
+            .pbm_orders {
+                padding-top: 5px;
+        
+                h2 {
+                    font-size: 19px;
+                }
+        
+                .pbm_orders_summary {
+        
+                    .pbm_o_s_i {
+        
+                        p {
+                            font-size: 13px;
+                        }
+        
+                        h4 {
+        
+                            span {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+    
+                .pbm_imp {
+                    margin-top: 6px;
+    
+                    .pbm_imp_h {
+    
+                        h3 {
+                            margin-left: 5px;
+                        }
+                    }
+    
+                    p {
+                        font-size: 13px;
+                    }
+    
+                    h4 {
+                        font-size: 13px;
+                    }
+                }
+            }
+    
+            .pbm_mt {
+                font-size: 12px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+    
+            .pbm_btn {
+                height: 38px;
+                min-height: 38px;
+                max-height: 38px;
+                width: 100px;
+                margin-bottom: 12px;
+        
+                &:hover {
+                    transform: scale(1);
+                }
+        
+                p {
+                    font-size: 14px;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}

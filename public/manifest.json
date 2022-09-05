@@ -1,0 +1,15 @@
+{
+  "short_name": "Base App",
+  "name": "Base App",
+  "icons": [
+    {
+      "src": "icon.ico",
+      "sizes": "90x90",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

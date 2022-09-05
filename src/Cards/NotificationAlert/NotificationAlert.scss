@@ -1,0 +1,116 @@
+.notificationalert_main {
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 110px;
+    border-radius: 4px;
+    display: flex;
+    box-shadow: 0.6px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: rgb(250, 250, 250);
+
+    .not_alert_1 {
+        width: 70px;
+        min-width: 70px;
+        max-width: 70px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        .not_a_icon {
+            width: 45px;
+            min-width: 45px;
+            max-width: 45px;
+            height: 45px;
+            min-height: 45px;
+            max-height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(74, 74, 173, 0.3);
+            border-radius: 4px;
+        }
+    }
+
+    .not_alert_2 {
+        width: 230px;
+        min-width: 230px;
+        max-width: 230px;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+
+        .not_a_heading {
+            font-size: 14px;
+            margin-top: 5px;
+            color: rgb(74, 74, 173);
+        }
+
+        .not_a_body {
+            font-size: 12px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+
+        .not_a_time {
+            font-size: 12.5px;
+            margin-bottom: 10px;
+        }
+
+        .not_a_link {
+            color: white;
+            font-size: 14px;
+            text-decoration: none;
+            width: 96%;
+            min-width: 96%;
+            max-width: 96%;
+            align-self: flex-start;
+            height: 42px;
+            min-height: 42px;
+            max-height: 42px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: rgb(74, 74, 173);
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0.6px 2px 2px rgba(0, 0, 0, 0.1);
+            transition: all 150ms ease-in-out;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+            &:visited {
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width:644px) {
+    .notificationalert_main {
+        width: 97%;
+        min-width: 97%;
+        max-width: 97%;
+
+        .not_alert_1 {
+            width: 20%;
+            min-width: 20%;
+            max-width: 20%;
+        }
+    
+        .not_alert_2 {
+            width: 80%;
+            min-width: 80%;
+            max-width: 80%;
+    
+            .not_a_link {
+    
+                &:hover {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

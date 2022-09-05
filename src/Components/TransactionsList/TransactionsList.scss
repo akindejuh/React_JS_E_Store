@@ -1,0 +1,156 @@
+.trans_main {
+    max-width: 100%;
+    height: 60px;
+    margin: 5px;
+    background-color: rgba(74, 74, 173, 0.15);
+    border-radius: 5px;
+    box-shadow: 0.6px 1px 2px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: row;
+
+    .trans_icon {
+        width: 60px;
+        min-width: 60px;
+        height: 60px;
+        min-height: 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        transform: scale(0.85);
+    }
+
+    .trans_info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .trans_name {
+            line-height: 33px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .trans_p_d_d {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 27px;
+            max-height: 27px;
+
+            .trans_price {
+                display: flex;
+                flex-direction: row;
+
+                p {
+                    font-size: 11.5px;
+                    margin-right: 3px;
+                    margin-top: 3px;
+                }
+
+                h3 {
+                    color: rgb(74, 74, 173);
+                    font-size: 16px;
+                }
+            }
+
+            .trans_dot {
+                background-color: rgb(170, 170, 170);
+                width: 7px;
+                min-width: 7px;
+                height: 7px;
+                min-height: 7px;
+                border-radius: 50%;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            
+            .trans_det {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .trans_time {
+        width: 78px;
+        min-width: 78px;
+        height: 60px;
+        margin-left: auto;
+
+        font-size: 12px;
+        padding-top: 3px;
+        color: rgb(170, 170, 170);
+    }
+}
+
+@media (max-width: 900px) {
+    .trans_main {
+        max-width: 100%;
+        height: 50px;
+        margin: 5px;
+
+        .trans_icon {
+            width: 50px;
+            min-width: 50px;
+            height: 50px;
+            min-height: 50px;
+        }
+    
+        .trans_info {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+    
+            .trans_name {
+                line-height: 27px;
+                font-size: 14px;
+            }
+    
+            .trans_p_d_d {
+                height: 23px;
+                max-height: 23px;
+    
+                .trans_price {
+                    display: flex;
+                    flex-direction: row;
+    
+                    p {
+                        font-size: 9px;
+                        margin-right: 3px;
+                        margin-top: 3px;
+                    }
+    
+                    h3 {
+                        color: rgb(74, 74, 173);
+                        font-size: 14px;
+                    }
+                }
+    
+                .trans_dot {
+                    background-color: rgb(170, 170, 170);
+                    width: 5px;
+                    min-width: 5px;
+                    height: 5px;
+                    min-height: 5px;
+                    border-radius: 50%;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+                
+                .trans_det {
+                    font-size: 9px;
+                }
+            }
+        }
+    
+        .trans_time {
+            width: 60px;
+            min-width: 60px;
+            height: 50px;
+            font-size: 9px;
+            padding-top: 5px;
+        }
+    }
+}

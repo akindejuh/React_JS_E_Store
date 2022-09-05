@@ -1,0 +1,14 @@
+.notifications_main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    min-height: 85vh;
+
+    .not_m_grid {
+        display: grid;
+        padding: 10px;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-items: center;
+    } 
+}

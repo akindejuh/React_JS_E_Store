@@ -1,0 +1,98 @@
+.bills_page_main {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+    .b_s_p_wrapper {
+        background-color: white;
+        width: 410px;
+        min-width: 410px;
+        max-width: 410px;
+        height: 502px;
+        min-height: 502px;
+        max-height: 502px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 15px 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+
+        .b_s_p_h {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+
+            .b_s_p_h_a {
+                transition: all 150ms ease-in-out;
+                position: absolute;
+                left: 3px;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            h1 {
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                color: rgb(74, 74, 173);
+                font-size: 20px;
+            }
+        }
+
+        .b_s_p_b {
+            display: flex;
+            flex-direction: column;
+
+            .b_s_p_info {
+                text-align: center;
+                margin-top: 20px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            
+            .b_s_p_b_cb {
+                margin-top: 80px;
+                padding: 5px;
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 10px;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .bills_page_main {
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        .b_s_p_wrapper {
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            height: 570px;
+            min-height: 570px;
+            max-height: 570px;
+            padding: 20px;
+            border-radius: 0px;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+    
+            .b_s_p_h {
+    
+                .b_s_p_h_a {
+    
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}
