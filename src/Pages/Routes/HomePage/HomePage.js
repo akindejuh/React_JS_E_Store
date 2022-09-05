@@ -55,7 +55,7 @@ const HomePage = () => {
                 <div className='hpm_a_b'>
                     <div className='hpm_a_b_1'>
                         <div className='hpm_a_b_1_anim'>
-                            <h2>Building trust into
+                            <h2>{app_name()} is built to handle
                                 <span>
                                     <TextTransition springConfig={presets.wobbly}>
                                         {introText[index % introText.length]}
