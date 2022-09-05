@@ -27,10 +27,9 @@ const HomePage = () => {
     const navigate = useNavigate();
     const screen_width = useSelector(state => state.ScreenWidth);
     const introText = [
-        "E-Commerce",
+        "Sales",
         "Payment",
-        "Logistics",
-        "Business"
+        "Delivery"
     ]
     const [index, setIndex] = useState(0);
 
